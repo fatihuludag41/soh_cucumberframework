@@ -6,11 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-//        Path of the features folder
+  plugin = "html:target/cucumber",
   features ="src/test/resources/features",
-//  step definitions folder
   glue = "stepdefinitions"
-
 )
 public class Runner {
 }
