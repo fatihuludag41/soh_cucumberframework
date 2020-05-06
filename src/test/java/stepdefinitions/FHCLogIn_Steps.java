@@ -35,4 +35,14 @@ FHCLoginPage fhcLoginPage=new FHCLoginPage();
         Assert.assertTrue(title.contains("Admin"));
         Driver.closeDriver();
     }
+
+    @Given("user enter valid manager username {string}")
+    public void user_enter_valid_manager_username(String string) {
+       fhcLoginPage.username.sendKeys(string);
+    }
+
+    @Given("user enter valid manager password {string}")
+    public void user_enter_valid_manager_password(String string) {
+      fhcLoginPage.password.sendKeys(string);
+    }
 }
