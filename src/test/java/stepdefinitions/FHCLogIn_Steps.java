@@ -43,6 +43,6 @@ FHCLoginPage fhcLoginPage=new FHCLoginPage();
 
     @Given("user enter valid manager password {string}")
     public void user_enter_valid_manager_password(String string) {
-      fhcLoginPage.password.sendKeys(string);
+        fhcLoginPage.password.sendKeys(string);
     }
 }

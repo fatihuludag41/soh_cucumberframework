@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = "html:target/cucumber",
         features ="src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@FHCloginParameters",
+        tags = "@datatable",
         dryRun = false
 )
 public class Runner {

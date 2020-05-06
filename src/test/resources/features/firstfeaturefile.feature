@@ -7,7 +7,7 @@ Feature:Google search
     And user searches for iphone
     Then verify the result has iphone
 
-  @googlesearch
   Scenario: TC02_User searches tea pot on google
     And user searches for tea pot
     Then verify the result has tea pot
+
