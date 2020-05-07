@@ -104,13 +104,16 @@ dtPage.startDate.sendKeys(startdate);
 dtPage.salary.sendKeys(salary);
     }
     @Given("user enters firstname {string} to the searchbox")
-    public void user_enters_firstname_to_the_searchbox(String firstname) {
+    public void user_enters_firstname_to_the_searchbox(String firstname) throws InterruptedException {
+        Thread.sleep(3000);
 dtPage.searchBox.sendKeys(firstname);
     }
     @Then("verify that user see the first name {string} in the searchbox")
-    public void verify_that_user_see_the_first_name_in_the_searchbox(String firstname) {
+    public void verify_that_user_see_the_first_name_in_the_searchbox(String firstname) throws InterruptedException {
+        Thread.sleep(3000);
         String name=dtPage.nameField.getText();//Test First Test Last
         Assert.assertTrue(name.contains(firstname));
+        Driver.closeDriver();
     }
 
 }
