@@ -4,7 +4,6 @@ Feature: Single data table
     Given user is on the google page
     And user searches for "<value>"
     Then verify the result has "<value>"
-
     Examples: Test Data
     |value    |
     |iphone   |
