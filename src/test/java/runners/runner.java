@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = "html:target/htmlreport",
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@glbtraderregistration",
+        tags = "@subscription",
         dryRun = false
 )
 
