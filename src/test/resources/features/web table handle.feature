@@ -10,10 +10,6 @@ Feature: Web Table Handle
   Scenario: number of rows and columns
     Then user prints the number of rows and columns
 
-  @getmax
-  Scenario: maximum Current Price(Rs)
-    Then user prints the maximum Current Price(Rs)
-
   @searchtable
   Scenario: search functionality on web table
-    Then user verifies that the table has "Quess Corp"
+    Then user verifies that the table has "Bata India"
